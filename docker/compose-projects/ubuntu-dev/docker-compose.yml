@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ubuntu-dev:
+    image: ubuntu:22.04
+    container_name: ubuntu-dev
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../../..:/workspace
+    working_dir: /workspace
+
